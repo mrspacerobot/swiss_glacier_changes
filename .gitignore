@@ -53,3 +53,6 @@ rsconnect/
 
 # Mac OS related files
 .DS_Store
+
+# Rplots file
+Rplots.pdf

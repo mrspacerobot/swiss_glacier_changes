@@ -17,3 +17,27 @@ install_pkgs <- function(pkgs){
   }
   vapply(pkgs, install_one_pkg, integer(1L), USE.NAMES = TRUE)
 }
+
+# This function takes a character vector and constructs factor labels
+# that can be used for nicer titles and annotations in ggplots
+make_labels <- function(names){
+  levels <- unique(names)
+  labels <- gsub("(\\w)(\\d+)", "*\\1[\\2]*", levels)
+  labels <- gsub("\\s", "~", labels)
+  labels <- gsub("^(\\*|~)", "", labels)
+  labels <- gsub("(\\*|~)$", "", labels)
+  labels <- gsub(",", "*symbol(',')*", labels)
+  labels <- gsub("\\*\\*", "\\*", labels)
+  labels
+}
+
+# This function calculates the deviation of each element of the vector x
+# from the closest multiple the number passed as argument "multiple"
+get_deviation <- function(x, multiple){
+  stopifnot(length(multiple) == 1L)
+  times <- floor(x / multiple)
+  lower <- (times * multiple) - x
+  upper <- multiple - abs(lower)
+  ifelse(abs(lower) < upper, lower, upper)
+}
+
