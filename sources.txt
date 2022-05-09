@@ -1,0 +1,23 @@
+1) Climate data:
+
+Temperature data comes from the Swiss National Basic Climatological Network which is run by the Federal Office of Meteorology and Climatology MeteoSwiss. 
+The main csv file can be found under the following link. It contains links to other csv files on the internet that contain the time series for all these different stations.
+
+https://data.geo.admin.ch/ch.meteoschweiz.klima/nbcn-tageswerte/liste-download-nbcn-d.csv
+
+2) Greenhouse gas emission data:
+
+The excel file can be downloaded from the following website of the Federal Office for the Environment:
+
+https://www.bafu.admin.ch/bafu/en/home/topics/climate/state/data/greenhouse-gas-inventory.html
+
+3) Glacier length change data:
+
+The glacier length change data can be downloaded from the website of GLAMOS (Glacier Monitoring Switzerland) under the following link:
+
+https://www.glamos.ch/downloads#tab-zeitreihen
+
+GLAMOS also notes that they would like to have this data cited in the following way:
+
+GLAMOS (2021). Swiss Glacier Length Change, release 2021, Glacier Monitoring Switzerland, doi:10.18750/lengthchange.2021.r2021. 
+
