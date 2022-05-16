@@ -574,7 +574,7 @@ ggsave(filename = "figures/cum_length_change_vs_lin_time_trend.pdf",
        width = 7,
        units = "in")
 
-# Try model fits -------------------------------------------------------------------------------------
+# Fit models -------------------------------------------------------------------------------------
 
 # possible predictors
 predictors <- list(
