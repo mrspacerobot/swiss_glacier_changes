@@ -19,7 +19,8 @@ install_pkgs <- function(pkgs){
 }
 
 # This function takes a character vector and constructs factor labels
-# that can be used for nicer titles and annotations in ggplots
+# that can be used for nicer titles and annotations in ggplots 
+# by using the syntax used by bquote().
 make_labels <- function(names){
   levels <- unique(names)
   labels <- gsub("(\\w)(\\d+)", "*\\1[\\2]*", levels)
