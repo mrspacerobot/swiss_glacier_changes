@@ -56,3 +56,5 @@ rsconnect/
 
 # Rplots file
 Rplots.pdf
+*\.log
+*\.aux
